@@ -1,0 +1,3 @@
+C:\Users\jordan\Desktop\Git\CST-247\Milestone 2\ICA3\obj\Debug\CLCProject.csprojResolveAssemblyReference.cache
+C:\Users\jordan\Desktop\Git\CST-247\Milestone 2\ICA3\obj\Debug\ICA3.dll
+C:\Users\jordan\Desktop\Git\CST-247\Milestone 2\ICA3\obj\Debug\ICA3.pdb

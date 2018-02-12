@@ -143,7 +143,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="CodeFile1.cs" />
     <Compile Include="Constants\DB.cs" />
     <Compile Include="Constants\States.cs" />
     <Compile Include="Controllers\HomeController.cs" />
