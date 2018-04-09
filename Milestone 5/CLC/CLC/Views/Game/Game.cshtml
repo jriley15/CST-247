@@ -1,0 +1,57 @@
+﻿@model CLC.Models.Game.Grid
+@{
+    ViewBag.Title = "Game";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>Game</h2>
+
+
+<style>
+
+
+    .gameBoard table {
+        border: 1px solid;
+        border-color: black;
+        border-collapse: collapse;
+        border: 0;
+    }
+
+    .gameBoard td {
+        border-color: black;
+        border: 1px solid;
+        background-color: #BCBCBC;
+        width: 32px;
+        height: 33px;
+        text-align: center;
+        font-weight: bold;
+        vertical-align: middle;
+        padding: 0;
+    }
+</style>
+
+
+<div class="gameBoard">
+
+
+    <div id="gamePartial">
+
+        <!-- Game board partial view which is updated via AJAX -->
+
+        @{ Html.RenderPartial("GameBoard", Model); }
+    </div>
+
+
+    <!-- Reset Grid form button -->
+    <br>
+    @using (Html.BeginForm("resetGrid", "Game", FormMethod.Get))
+    {
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Reset Game" class="btn btn-default" />
+            </div>
+        </div>
+    }
+
+</div>
