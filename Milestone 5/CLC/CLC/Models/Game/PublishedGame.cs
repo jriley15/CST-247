@@ -12,7 +12,6 @@ namespace CLC.Models.Game
     {
         [DataMember]
         int id;
-        [DataMember]
         int gridid;
         [DataMember]
         int userid;

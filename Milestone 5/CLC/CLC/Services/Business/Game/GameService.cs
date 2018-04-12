@@ -56,6 +56,14 @@ namespace CLC.Services.Business.Game
             return gameDAO.getAllStats();
         }
 
+        public Boolean testService()
+        {
+            GameDAO gameDAO = new GameDAO();
+
+            //saves game stats to db
+            return gameDAO.testService();
+        }
+
         //activates cell in grid
         public void activateCell(Grid g, int X, int Y)
         {

@@ -436,5 +436,47 @@ namespace CLC.Services.Data.Game
             return games;
         }
 
+
+        //test db connectivity
+        public Boolean testService()
+        {
+            List<PublishedGame> games = new List<PublishedGame>();
+
+            try
+            {
+                // Setup SELECT query with parameters
+                string query = "SELECT 1";
+
+                // Create connection and command
+                using (SqlConnection cn = new SqlConnection(DB.CONNECTION_STRING))
+                using (SqlCommand cmd = new SqlCommand(query, cn))
+                {
+
+                    // Open the connection
+                    cn.Open();
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        return true;
+                    }
+                    // Close the connection
+                    cn.Close();
+                }
+
+            }
+            catch (SqlException e)
+            {
+                return false;
+            }
+
+            return false;
+        }
+
+
+
+
     }
+
+
 }

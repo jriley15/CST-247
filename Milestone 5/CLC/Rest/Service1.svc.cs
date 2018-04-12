@@ -17,7 +17,7 @@ namespace Rest
 
 
         List<PublishedGame> games = new List<PublishedGame>();
-
+        Boolean serverTest = false;
 
         public Service1()
         {
@@ -25,6 +25,7 @@ namespace Rest
 
             GameService service = new GameService();
 
+            serverTest = service.testService();
 
             games = service.getAllGames();
         }
@@ -37,8 +38,29 @@ namespace Rest
             // return list of games
             // Note: normally this would call a Business Service and DAO to get this information
 
-            DTO dto = new DTO(0, "OK", games);
+            DTO dto;
 
+            //check if data server is up
+            if (!serverTest)
+            {
+                //return error 
+                dto = new DTO(1, "Data Server down", null);
+            }
+            else if (!games.Any())
+            {
+                //return error 
+                dto = new DTO(-1, "No Games found", null);
+
+            }
+            else
+            {
+                //return with data
+               dto = new DTO(0, "OK", games);
+
+            }
+
+
+           
 
 
             return dto;
