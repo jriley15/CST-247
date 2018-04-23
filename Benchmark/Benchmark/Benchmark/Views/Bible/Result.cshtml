@@ -1,0 +1,79 @@
+﻿@model Benchmark.Models.BibleVerse
+
+@{
+    ViewBag.Title = "Search Result";
+}
+
+<h2>Search Result</h2>
+
+@if (Model != null)
+{
+    <h4>
+        <font color="blue">
+            Found 1 match
+        </font>
+
+    </h4>
+
+}
+<div>
+    <hr />
+
+    @if (Model != null)
+    {
+        <dl class="dl-horizontal">
+            <dt>
+                Testament Selection:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TestamentSelection)
+            </dd>
+
+            <dt>
+                Book Selection:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.BookSelection)
+            </dd>
+
+            <dt>
+                Chapter Number:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ChapterNumber)
+            </dd>
+
+            <dt>
+                Verse Number:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.VerseNumber)
+            </dd>
+
+            <dt>
+                Verse Text:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.VerseText)
+            </dd>
+
+        </dl>
+
+    }
+    else
+    {
+        <h4>
+            <font color="red">
+                0 Results found
+            </font>
+
+        </h4>
+        @Html.ActionLink("Back to Search", "Search", "Bible")
+    }
+</div>
+

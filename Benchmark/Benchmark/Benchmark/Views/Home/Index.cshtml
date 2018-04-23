@@ -1,0 +1,21 @@
+﻿@model Benchmark.Models.ActionResponse
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@if (Model != null)
+{
+    <h2>
+        <font color="blue">
+            @Model.Response
+        </font>
+    </h2>
+}
+
+<div class="jumbotron">
+    <h1>CST-247</h1>
+    <p class="lead">Welcome to my Bible verse benchmark application</p>
+    <p>Created by Jordan Riley</p>
+</div>

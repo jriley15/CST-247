@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmark", "Benchmark\Benchmark.csproj", "{C81C7645-CCB6-41F4-9F7E-5256F37BA903}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "bible", "..\bible\bible.sqlproj", "{9B13266A-F579-466E-AE3D-8331E72726BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C81C7645-CCB6-41F4-9F7E-5256F37BA903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C81C7645-CCB6-41F4-9F7E-5256F37BA903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C81C7645-CCB6-41F4-9F7E-5256F37BA903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C81C7645-CCB6-41F4-9F7E-5256F37BA903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B13266A-F579-466E-AE3D-8331E72726BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B13266A-F579-466E-AE3D-8331E72726BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B13266A-F579-466E-AE3D-8331E72726BD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9B13266A-F579-466E-AE3D-8331E72726BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B13266A-F579-466E-AE3D-8331E72726BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B13266A-F579-466E-AE3D-8331E72726BD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F0B5F10-DB65-4ABB-99F8-F9B66FC1A001}
+	EndGlobalSection
+EndGlobal
